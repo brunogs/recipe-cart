@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: recipe-cart
+  datasource:
+    url: jdbc:postgresql://localhost:5432/recipe_cart
+    driver-class-name: org.postgresql.Driver
+    username: admin
+    password: admin
