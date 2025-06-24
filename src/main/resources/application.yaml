@@ -1,8 +1,15 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /recipes
 spring:
   application:
     name: recipe-cart
   datasource:
-    url: jdbc:postgresql://localhost:5432/recipe_cart
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://postgres:5432/recipe_db}
+    username: ${SPRING_DATASOURCE_USERNAME:recipe_user}
+    password: ${SPRING_DATASOURCE_PASSWORD:recipe_password}
     driver-class-name: org.postgresql.Driver
-    username: admin
-    password: admin
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
