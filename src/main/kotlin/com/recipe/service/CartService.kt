@@ -33,4 +33,12 @@ class CartService(
         val cartITem = CartItem(cart, recipe, request.quantity)
         cartItemRepository.save(cartITem)
     }
+
+    @Transactional
+    fun deleteRecipe(cartId: Long, recipeId: Long) {
+        val rowsAffected = cartItemRepository.deleteAllByCartIdAndRecipeId(cartId, recipeId)
+        if (rowsAffected == 0) {
+            throw RecipeNotFoundException(recipeId)
+        }
+    }
 }

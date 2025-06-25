@@ -27,3 +27,9 @@ Content-Type: application/json
 {
   "recipeId": 1
 }
+
+### DELETE invalid receipe
+DELETE http://localhost:9090/carts/1/recipes/999
+
+### DELETE receipe
+DELETE http://localhost:9090/carts/1/recipes/1
