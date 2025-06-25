@@ -7,7 +7,7 @@ import jakarta.persistence.*
 data class CartItem(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Long = 0,
+    val id: Long? = null,
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cart_id", nullable = false)
@@ -20,6 +20,13 @@ data class CartItem(
     @Column(nullable = false)
     val quantity: Int = 1
 ) {
+
+    constructor(cart: Cart, recipe: Recipe, quantity: Int) : this(
+        null,
+        cart,
+        recipe,
+        quantity
+    )
 
     fun getTotalPrice(): Int {
         return recipe?.let { it.priceInCents * quantity } ?: 0
