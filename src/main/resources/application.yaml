@@ -6,7 +6,7 @@ spring:
   application:
     name: recipe-cart
   datasource:
-    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://postgres:5432/recipe_db}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://127.0.0.1:5432/recipe_db}
     username: ${SPRING_DATASOURCE_USERNAME:recipe_user}
     password: ${SPRING_DATASOURCE_PASSWORD:recipe_password}
     driver-class-name: org.postgresql.Driver
