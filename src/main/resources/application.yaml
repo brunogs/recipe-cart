@@ -1,7 +1,7 @@
 server:
   port: 9090
   servlet:
-    context-path: /recipes
+    context-path: /
 spring:
   application:
     name: recipe-cart
