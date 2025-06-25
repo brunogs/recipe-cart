@@ -39,7 +39,7 @@ docker-compose down
 * Then start only the database:
 
 ```shell
-docker-compose down postgres
+docker-compose up postgres
 ```
 
 Now you can start the application in your IntelliJ (or any IDE) using the Debug mode.
