@@ -1,6 +1,6 @@
 package com.recipe.service
 
-import com.recipe.RecipeRepository
+import com.recipe.repository.RecipeRepository
 import com.recipe.dto.RecipeResponse
 import org.springframework.stereotype.Service
 

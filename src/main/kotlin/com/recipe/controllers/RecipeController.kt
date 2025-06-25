@@ -9,7 +9,7 @@ class RecipeController (
     private val recipeService: RecipeService
 ) {
 
-    @GetMapping("/recipes/")
+    @GetMapping("/recipes")
     fun getAll() = recipeService.getAll()
 
 }

@@ -1,0 +1,5 @@
+### GET recipes
+GET http://localhost:9090/recipes
+
+### POST carts
+POST http://localhost:9090/carts
