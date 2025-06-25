@@ -51,3 +51,12 @@ In the migrations I've already created the products and recipes; in the tests I 
 ## Quick Demo
 
 https://www.loom.com/share/511bdd72ad7142edb57b14e9f912acca?sid=a8affef0-b832-4756-9653-4a8bf69e3e24
+
+
+### Next steps
+
+Some improvements or next steps I could do here, but I decided to not do for the sake of simplicity:
+
+- Swagger to document the API.
+- Cover the endpoints in E2E.
+- More endpoints to create all the dependencies.
