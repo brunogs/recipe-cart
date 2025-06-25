@@ -4,6 +4,9 @@ GET http://localhost:9090/recipes
 ### POST carts
 POST http://localhost:9090/carts
 
+### GET carts
+GET http://localhost:9090/carts/2
+
 ### POST add receipe wrong id
 POST http://localhost:9090/carts/333/add_recipe
 Content-Type: application/json
@@ -21,15 +24,15 @@ Content-Type: application/json
 }
 
 ### POST add valid receipe
-POST http://localhost:9090/carts/1/add_recipe
+POST http://localhost:9090/carts/2/add_recipe
 Content-Type: application/json
 
 {
-  "recipeId": 1
+  "recipeId": 3
 }
 
 ### DELETE invalid receipe
 DELETE http://localhost:9090/carts/1/recipes/999
 
 ### DELETE receipe
-DELETE http://localhost:9090/carts/1/recipes/1
+DELETE http://localhost:9090/carts/2/recipes/2

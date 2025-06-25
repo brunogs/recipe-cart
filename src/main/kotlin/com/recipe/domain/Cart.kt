@@ -10,9 +10,6 @@ data class Cart(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long = 0,
 
-    @Column(name = "total_in_cents", nullable = false)
-    var totalInCents: Int = 0,
-
     @Column(name = "created_at", nullable = false)
     val createdAt: ZonedDateTime = ZonedDateTime.now(),
 
